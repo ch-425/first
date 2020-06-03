@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test02</title>
+    <style>
+        table,th,td { border: 1px solid blue; border-collapse: collapse;}
+    </style>
+</head>
+<body>
+    <p>이미지맵 삽입</p>
+    <img src="./html테스트제공파일/dog.jpg" usemap="#p">
+    <map name="p">
+        <area shape="rect" coords="94,26,175,86" href="http://www.swjb.hs.kr" target="_blank">
+    </map>
+    <P>테이블 삽입 및 꾸미기</P>
+    <table>
+        <tr style=background-color:yellow;>
+            <th>연번</th>
+            <th>브라우저</th>
+            <th>제조업체</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>크롬</td>
+            <td>구글</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>엣지</td>
+            <td>마이크로소프트</td>
+        </tr>
+    </table>
+    <p>동영상 파일 삽입</p>
+    <video src="html테스트제공파일/dron.mp4" width="300" height="200" controls></video>
+    <p>음악 파일 삽입</p>
+    <audio src="html테스트제공파일/lovers.mp3" controls></audio>
+    <p>애니메이션 파일을 삽입하시오.</p>
+    <embed src="html테스트제공파일/snow.swf">
+</body>
+</html>

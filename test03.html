@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test03</title>
+    <style>
+        *{
+            margin: 0;
+            padding-left: 0;
+        }
+        .container {
+            width: 600px; margin: 0;
+        }
+        ul {
+         list-style-type: none;
+        }
+        div.left {
+            text-align: left;
+        }
+        ul li {
+            margin-bottom: 10px; 
+        }
+        fieldset {
+            margin: 15px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <fieldset>
+         <h2>회원 가입 양식</h2>
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name" size="10" maxlength="4" value="한글 4글자까지" required>
+            </li>
+            <li>
+                <label for="birth">생년월일</label>
+                <input type="date" id="birth">
+            </li>
+            <li>
+                <label for="route">가입경로 : </label>
+                <label><input type="radio" name="a" value="1">친구소개</label>
+                <label><input type="radio" name="a" value="2">SNS홍보</label>
+                <label><input type="radio" name="a" value="3">인터넷검색</label>
+            </li>
+            <li>
+                <label for="hobby">관심분야 : </label>
+                <select id="hobby" name="b" size="1">
+                <option value="1">영화</option>
+                <option value="2">음악</option>
+                <option value="3">게임</option>
+            </select>
+            </li>
+            <li>
+                <label for="comment">남기고 싶은 말 : <br></label>
+                <textarea cols="30" rows="5" id="comment"></textarea>
+            </li>
+        </ul>  
+        <div class="left">
+            <input type="submit" value="가입하기">
+        </div>
+    </fieldset>
+    </form>
+</div>
+</body>
+</html>
